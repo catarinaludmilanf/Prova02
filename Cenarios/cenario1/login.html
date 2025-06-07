@@ -22,6 +22,18 @@
       <i class="fa-solid fa-envelope"></i><!--Ícone envelope-->
       <h3>Bem-vindo(a) ao Correio Web!</h3>
     </div>
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+      <label for="password">Senha</label>
+      <div id="password-container">
+        <input type="password" name="password" id="password" oninput="iconVisibility()" placeholder="Digite sua senha"
+          required>
+        <i class="fas fa-eye" id="togglePassword" onclick="passwordVisibility()"></i> <!--Ícone para mostrar a senha-->
+      </div>
+      <p><a href="" id="password-recovery">Esqueceu sua senha?</a></p>
+      <button type="submit" onclick="loginUser()">Entrar</button>
+    </form>
   </main>
 </body>
 
