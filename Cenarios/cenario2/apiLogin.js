@@ -34,6 +34,7 @@ async function loginUser(event) {
         }
 
         alert('Login realizado com sucesso!');
+        window.location.href = '../home/home.html';
     } catch (error) {
         console.error('Erro ao conectar-se ao servidor:', error);
         alert('Erro ao conectar-se ao servidor. Verifique sua conexão.');
